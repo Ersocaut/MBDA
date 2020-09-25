@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE [
+    <!ELEMENT Estudios (Institucion, TituloObtenido, Año)>
+
+    <!ELEMENT TituloObtenido (#PCDATA)>
+    <!ELEMENT Institucion (#PCDATA)>
+    <!ELEMENT Año (#PCDATA)>
+
+    <!ATTLIST Department Code ID #REQUIRED>
+    <!ATTLIST Course Number ID #REQUIRED>
+    <!ATTLIST Course Enrollment CDATA>
+]>
+
+<Estudios>
+	<Institucion>
+		Nombre
+	</Institucion>
+	<TituloObtenido>
+		ElTitulo
+	</TituloObtenido>
+	<Año>
+		2000
+	</Año>
+</Estudios>

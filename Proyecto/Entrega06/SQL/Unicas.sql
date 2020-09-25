@@ -1,0 +1,44 @@
+--Unicas
+
+--Estudiante
+ALTER TABLE ESTUDIANTE
+ADD CONSTRAINT UK_Estudiante_numdoc
+UNIQUE (numdoc);
+
+ALTER TABLE ESTUDIANTE
+ADD CONSTRAINT UK_Estudiante_correoeci
+UNIQUE (correoeci);
+
+ALTER TABLE ESTUDIANTE
+ADD CONSTRAINT UK_Estudiante_correo
+UNIQUE (correo);
+
+--Decanatura
+ALTER TABLE DECANATURA
+ADD CONSTRAINT UK_dec_nombre
+UNIQUE (nombre);
+
+--MATERIA
+ALTER TABLE MATERIA
+ADD CONSTRAINT UK_mat_nombre
+UNIQUE (nombre);
+
+ALTER TABLE MATERIA
+ADD CONSTRAINT UK_mat_siglas
+UNIQUE (siglas);
+
+--CURSO EXTRA
+ALTER TABLE CursoExtracurricular
+ADD CONSTRAINT UK_CE_siglasE
+UNIQUE (siglasE);
+
+ALTER TABLE CursoExtracurricular
+ADD CONSTRAINT UK_CE_nombre
+UNIQUE (nombre);
+--Profesor
+ALTER TABLE PROFESOR
+ADD CONSTRAINT UK_Pro_correoeci
+UNIQUE (correoECI);
+
+
+

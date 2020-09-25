@@ -1,0 +1,4 @@
+DROP PACKAGE PC_Estudiantes;
+DROP PACKAGE PC_Profesores;
+DROP PACKAGE PC_Decanaturas;
+DROP PACKAGE PC_Cursos;
