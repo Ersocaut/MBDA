@@ -1,0 +1,203 @@
+<!-- 1. -->
+<!-- Estructura XMLOk -->
+<?xml version="1.0"?>
+<AfterRide>
+	<Registro numero="1">
+		<Revision>
+			<Sección_Dura>
+				<KM_inicial></KM_inicial>
+				<KM_final></KM_final>
+				<VPromedio></VPromedio>
+				<VMinima></VMinima>
+				<VMaxima></VMaxima>
+				<PulPromedio>	</PulPromedio>
+				<PotPromedio></PotPromedio>
+			</Sección_Dura>
+			<Sección_Fácil>
+				<KM_inicial></KM_inicial>
+				<KM_final></KM_final>
+				<VPromedio></VPromedio>
+				<VMinima></VMinima>
+				<VMaxima></VMaxima>
+				<PulPromedio>	</PulPromedio>
+				<PotPromedio></PotPromedio>
+			</Sección_Fácil>
+			<Sección_Descenso>
+				<KM_inicial></KM_inicial>
+				<KM_final></KM_final>
+				<VPromedio></VPromedio>
+				<VMinima></VMinima>
+				<VMaxima></VMaxima>
+				<PulPromedio>	</PulPromedio>
+				<PotPromedio></PotPromedio>
+			</Sección_Descenso>
+		</Revision>
+	</Registro>
+</AfterRide>
+
+<!-- Estructura XMLNoOk -->
+<!-- Hace falta cerrar tanto Revision como Sección_Fácil -->
+<?xml version="1.0"?>
+<AfterRide>
+	<Registro numero="1">
+		<Revision>
+			<Sección_Dura>
+				<KM_inicial></KM_inicial>
+				<KM_final></KM_final>
+				<VPromedio></VPromedio>
+				<VMinima></VMinima>
+				<VMaxima></VMaxima>
+				<PulPromedio>	</PulPromedio>
+				<PotPromedio></PotPromedio>
+			</Sección_Dura>
+			<Sección_Fácil>
+				<KM_inicial></KM_inicial>
+				<KM_final></KM_final>
+				<VPromedio></VPromedio>
+				<VMinima></VMinima>
+				<VMaxima></VMaxima>
+				<PulPromedio></PulPromedio>
+				<PotPromedio></PotPromedio>
+			<Sección_Descenso>
+				<KM_inicial></KM_inicial>
+				<KM_final></KM_final>
+				<VPromedio></VPromedio>
+				<PulPromedio>	</PulPromedio>
+				<PotPromedio></PotPromedio>
+			</Sección_Descenso>
+	</Registro>
+</AfterRide>
+<!-- DTD -->
+<?xml version="1.0"?><!DOCTYPE Registro [
+<!ELEMENT Revision (seccionFacil, seccionDura, seccionDescenso)>
+	<!ELEMENT KM_inicial (#PCDATA)>
+	<!ELEMENT KM_final (#PCDATA)>
+<!ELEMENT seccionFacil (#PCDATA)>
+<!ELEMENT seccionDura (#PCDATA)>
+<!ELEMENT seccionDescenso (#PCDATA)>
+	<!ELEMENT VPromedio (#PCDATA)>
+	<!ELEMENT PulPromedio (#PCDATA)>
+	<!ELEMENT PotPromedio (#PCDATA)>
+	<!ATTLIST Revision numero ID #REQUIRED >
+]>
+<!-- 2 -->
+<!-- PoblarOk -->
+<?xml version="1.0"?>
+<AfterRide>
+	<Registro numero="1">
+		<Revision>
+			<Sección_Dura>
+				<KM_inicial>0</KM_inicial>
+				<KM_final>20</KM_final> 
+				<VPromedio>35</VPromedio>
+				<VMinima>30</VMinima>
+				<VMaxima>40</VMaxima>
+				<PulPromedio>	135</PulPromedio>
+				<PotPromedio>70</PotPromedio>
+			</Sección_Dura>
+			<Sección_Fácil>
+				<KM_inicial>20</KM_inicial>
+				<KM_final>25</KM_final>
+				<VPromedio>40</VPromedio>
+				<VMinima>38</VMinima>
+				<VMaxima>42</VMaxima>
+				<PulPromedio>	120</PulPromedio>
+				<PotPromedio>55</PotPromedio>
+			</Sección_Fácil>
+			<Sección_Descenso>
+				<KM_inicial>25</KM_inicial>
+				<KM_final>50</KM_final>
+				<VPromedio>50</VPromedio>
+				<VMinima>50</VMinima>
+				<VMaxima>50</VMaxima>
+				<PulPromedio>120</PulPromedio>
+				<PotPromedio>60</PotPromedio>
+			</Sección_Descenso>
+		</Revision>
+	</Registro>
+	<Registro numero="2">
+		<Revision>
+			<Sección_Dura>											<KM_inicial>20</KM_inicial>
+				<KM_final>25</KM_final>
+				<VPromedio>40</VPromedio>
+				<VMinima>38</VMinima>
+				<VMaxima>42</VMaxima>
+				<PulPromedio>	120</PulPromedio>
+				<PotPromedio>55</PotPromedio>
+			</Sección_Dura>
+			<Sección_Fácil>
+<KM_inicial>0</KM_inicial>
+	<KM_final>20</KM_final> 			<VPromedio>35</VPromedio>
+	<VMinima>30</VMinima>			<VMaxima>40</VMaxima>
+	<PulPromedio>	135</PulPromedio>			<PotPromedio>70</PotPromedio>
+			</Sección_Fácil>
+		</Revision>
+	</Registro>
+</AfterRide>
+<!-- PoblaNoOk -->
+<!-- No están bien cerradas y algunas de los datos requeridos hacen falta -->
+<AfterRide>
+	<Registro numero="3">
+		<Revision>
+			<Sección_Dura>											<KM_inicial>20</KM_inicial>
+				<KM_final>25</KM_final>
+				<VPromedio>40</VPromedio>
+				<VMaxima>42</VMaxima>
+				<PulPromedio>	120</PulPromedio>
+				<PotPromedio>55</PotPromedio>
+			<Sección_Fácil>
+<KM_inicial>0</KM_inicial>
+	<KM_final>20</KM_final> 			<VPromedio>35</VPromedio>
+	<VMinima>30</VMinima>			<VMaxima>40</VMaxima>
+	<PotPromedio>70</PotPromedio>
+			</Sección_Fácil>
+	</Registro>
+</AfterRide>
+
+
+
+
+<!-- 4 -->
+<!-- Estructura con nuevos datos -->
+<AfterRide>
+	<Registro numero="1">
+		<Revision>
+			<Sección_Dura>
+				<KM_inicial></KM_inicial>
+				<KM_final></KM_final>
+				<VPromedio></VPromedio>
+				<VMinima></VMinima>
+				<VMaxima></VMaxima>
+				<PulPromedio>	</PulPromedio>
+				<PotPromedio></PotPromedio>
+				<Categoria></Categoria>
+				<Ganador></Ganador>
+				<EquipoGanador></EquipoGanador>
+			</Sección_Dura>
+			<Sección_Fácil>
+				<KM_inicial></KM_inicial>
+				<KM_final></KM_final>
+				<VPromedio></VPromedio>
+				<VMinima></VMinima>
+				<VMaxima></VMaxima>
+				<PulPromedio>	</PulPromedio>
+				<PotPromedio></PotPromedio>
+				<Categoria></Categoria>
+				<Ganador></Ganador>
+				<EquipoGanador></EquipoGanador>
+			</Sección_Fácil>
+			<Sección_Descenso>
+				<KM_inicial></KM_inicial>
+				<KM_final></KM_final>
+				<VPromedio></VPromedio>
+				<VMinima></VMinima>
+				<VMaxima></VMaxima>
+				<PulPromedio>	</PulPromedio>
+				<PotPromedio></PotPromedio>
+				<Categoria></Categoria>
+				<Ganador></Ganador>
+				<EquipoGanador></EquipoGanador>
+			</Sección_Descenso>
+		</Revision>
+	</Registro>
+</AfterRide>

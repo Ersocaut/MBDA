@@ -1,0 +1,9 @@
+CREATE ROLE Administrator;
+CREATE ROLE Participanter;
+
+GRANT EXECUTE ON PA_PARTICIPANTE To Participanter;
+GRANT EXECUTE ON PA_ADMINISTRADOR To Administrator;
+
+GRANT Administrator TO BD2130184;
+GRANT Participanter TO BD2154026;
+GRANT Administrator TO BD2154026;

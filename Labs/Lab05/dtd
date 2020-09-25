@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE Course_Catalog[
+    <!ELEMENT Department (Title, Chair, Course+)>
+    <!ELEMENT Instructors (Professor | Lecturer)>
+    <!ELEMENT Chair (Professor)>
+    <!ELEMENT Professor (First_Name, Last_Name)>
+    <!ELEMENT Lecturer (First_Name, Middle_Initial, Last_Name)>
+    <!ELEMENT Course (Title, Description, Instructors*)>
+    <!ELEMENT Prerequisites (Prereq+ | EMPTY)>
+
+    <!ELEMENT Title (#PCDATA)>
+    <!ELEMENT First_Name (#PCDATA)>
+    <!ELEMENT Last_Name (#PCDATA)>
+    <!ELEMENT Middle_Initial (#PCDATA)>
+    <!ELEMENT Description (#PCDATA)>
+    <!ELEMENT Prereq (#PCDATA)>
+
+
+    <!ATTLIST Department Code ID #REQUIRED>
+    <!ATTLIST Course Number ID #REQUIRED>
+    <!ATTLIST Course Enrollment CDATA>
+]>
